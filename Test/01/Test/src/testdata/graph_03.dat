@@ -1,0 +1,1 @@
+graph=[nodes=[node=[type=ACTIVITY;id=-8177858634671665663;name=1;class=microflowengine.worknodes.OutputStreamInitializationWorkNode];node=[type=ACTIVITY;id=9014774698399304610;name=7;class=microflowengine.worknodes.OutputHelloWorldWorkNode]];edges=[edge=[id=4197267763767010959;start.id=-8177858634671665663;end.id=9014774698399304610;weight=0]]]

@@ -1,0 +1,36 @@
+...
+
+Version 4:
+- Plan ist ein gerichteter Graph
+- kann zyklisch sein, dann hat man Schleifen im Plan
+- jeder Knoten beschreibt einen Teilschritt des Plans
+- jeder Knoten hat eine Execute-Phase
+- jeder Knoten hat eine Iterate-Edges-Phase
+- Execute kommt vor Iterate-Edges
+- Kanten haben Gewichtung
+    - die Gewichtung gibt an, wie oft der Knoten des Kantenendes gespawnt wird
+    - Gewichtung kann während der Execute-Phase des Knotens verändert werden
+    - bei Gewicht 0 wird nicht gespawnt, so kann man Konditionen abbilden
+- der Graph hat einen Wurzelknoten, der als erstes gespawnt wird
+- ein Knoten spawnt seine Kinder nicht selbst, er überläßt das dem Graph
+- der Graph kann so Statistiken erstellen, loggen, abbrechen, einen Threadpool verwenden usw.
+- evtl. kann man den Knoten noch Prioritäten geben, so daß der Graph entscheiden kann,
+  welcher Knoten als nächstes gespawnt wird, falls es mehr abzuarbeitende Knoten als
+  frei Threads im Pool gibt
+- der Graph selbst ist die eigentlich MicroFlowEngine (? Wirklich ?)
+
+
+
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns"  
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns
+     http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <graph id="G" edgedefault="undirected">
+    <node id="n0"/>
+    <node id="n1"/>
+    <edge id="e1" source="n0" target="n1"/>
+  </graph>
+</graphml>

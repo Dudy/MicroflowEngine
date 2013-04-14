@@ -1,0 +1,35 @@
+graph=[
+  nodes=[
+    node=[
+      type=DEFAULT;
+      name=node 1;
+      id=-1177858634671665663
+    ];
+    node=[
+      type=WORKNODE;
+      name=node 2;
+      class=microflowengine.worknodes.OutputStreamInitializationWorkNode;
+      id=-8177858634671665663
+    ];
+    node=[
+      type=WORKNODE;
+      name=node 2;
+      class=microflowengine.worknodes.OutputHelloWorldWorkNode;
+      id=9014774698399304610
+    ]
+  ];
+  edges=[
+    edge=[
+      id=1197267763767010959;
+      start.id=-1177858634671665663;
+      end.id=-8177858634671665663;
+      weight=0
+    ]
+    edge=[
+      id=4197267763767010959;
+      start.id=-8177858634671665663;
+      end.id=9014774698399304610;
+      weight=0
+    ]
+  ]
+]

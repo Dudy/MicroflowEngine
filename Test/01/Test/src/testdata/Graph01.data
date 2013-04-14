@@ -1,0 +1,5 @@
+node=[
+	class=de.podolak.microflowengine.graph.nodes.OutputStreamInitializationWorkNode;
+	name=1;
+	id=0
+]

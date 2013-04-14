@@ -1,0 +1,24 @@
+graph=[
+  nodes=[
+    node=[
+      type=ACTIVITY;
+      name=node 1;
+      class=microflowengine.worknodes.OutputStreamInitializationWorkNode;
+      id=-8177858634671665663
+    ];
+    node=[
+      type=ACTIVITY;
+      name=node 2;
+      class=microflowengine.worknodes.OutputHelloWorldWorkNode;
+      id=9014774698399304610
+    ]
+  ];
+  edges=[
+    edge=[
+      id=4197267763767010959;
+      start.id=-8177858634671665663;
+      end.id=9014774698399304610;
+      weight=0
+    ]
+  ]
+]
